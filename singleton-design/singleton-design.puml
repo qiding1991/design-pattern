@@ -1,0 +1,15 @@
+@startuml
+  class SingleDemo{
+     - instance:SingleDemo
+     - SingleDemo()
+     + getInstance():SingleDemo
+  }
+
+  class Client{
+     # instance:SingleDemo
+  }
+
+  Client..>SingleDemo
+  SingleDemo --o SingleDemo
+
+@enduml
