@@ -1,0 +1,25 @@
+@startuml
+
+    interface IFunction{
+       + getResult(): String
+    }
+    class FunctionImpl{
+       - functionName:String
+       + getResult(): String
+    }
+    class FunctionProxy{
+      - function : FunctionImpl
+       + getResult(): String
+    }
+
+    FunctionImpl...|>IFunction
+    FunctionProxy...|>IFunction
+    FunctionImpl ---* FunctionProxy
+    client...>IFunction
+    client...>FunctionImpl
+
+
+
+
+
+@enduml

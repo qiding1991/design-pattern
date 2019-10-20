@@ -6,11 +6,24 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/singleton-design/pom.xml" />
+        <option value="$PROJECT_DIR$/proto-typede-design/pom.xml" />
+        <option value="$PROJECT_DIR$/factory-method-design/pom.xml" />
+        <option value="$PROJECT_DIR$/create-builder-design/pom.xml" />
+        <option value="$PROJECT_DIR$/struct-proxy-design/pom.xml" />
+        <option value="$PROJECT_DIR$/struct-adapter-design/pom.xml" />
+        <option value="$PROJECT_DIR$/struct-bridge-design/pom.xml" />
+        <option value="$PROJECT_DIR$/struct-decorator-design/pom.xml" />
+        <option value="$PROJECT_DIR$/struct-facade-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-template-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-strategy-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-command-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-chain-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-state-design/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/singleton-design/pom.xml" />
+    <file url="file://$PROJECT_DIR$/create-singleton-design/pom.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

@@ -1,0 +1,88 @@
+@startuml
+
+
+'    同一个工厂可以创建多个类型的产品
+
+'    产品1
+    interface IProduct1{
+       + method1():void
+    }
+
+
+'    产品1-1
+    class Product11{
+     + method1():void
+    }
+
+'    产品1-2
+   class Product12{
+    + method1():void
+    }
+
+
+'    产品2
+    interface IProduct2{
+           + method2():void
+    }
+'    产品2-1
+    class Product21{
+    + method2():void
+    }
+'    产品2-2
+    class Product22{
+    + method2():void
+    }
+
+
+    abstract class IFactory{
+      + create1(): IProduce1
+      + create2(): IProduce2
+    }
+
+
+
+     class Factory1{
+          + create1(): IProduce11
+          + create2(): IProduce21
+     }
+
+
+     class Factory2{
+               + create1(): IProduce12
+               + create2(): IProduce22
+     }
+
+
+'    uml实现
+
+
+
+
+     IProduct1<|...Product11
+     IProduct1<|...Product12
+
+
+     IProduct2<|...Product21
+     IProduct2<|...Product22
+
+
+     IFactory<|...Factory1
+     IFactory<|...Factory2
+
+     Product11<...Factory1
+     Product12<.. Factory1
+
+     Product21<...Factory2
+     Product22<.. Factory2
+
+
+     IProduct1<|...client
+     IProduct2<|...client
+     IFactory<|...client
+
+
+
+
+
+
+@enduml

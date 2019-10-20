@@ -1,0 +1,37 @@
+@startuml
+      interface Product{
+        + showInfo() : void
+      }
+
+      class AProduct{
+         - productName:String
+         + showInfo() : void
+      }
+
+      class BProduct{
+          - productName:String
+          + showInfo() : void
+      }
+
+
+      interface AbstractFactory{
+         + createProduct():Product
+      }
+
+       interface AFactory{
+           + createProduct():Product
+       }
+
+       interface BFactory{
+             + createProduct():Product
+       }
+
+      Product<|... AProduct
+      Product<|...BProduct
+      AbstractFactory<|... AFactory
+      AbstractFactory<|... BFactory
+      AProduct<... AFactory
+      BProduct<... BFactory
+      AbstractFactory<... Client
+      Product<... Client
+@enduml

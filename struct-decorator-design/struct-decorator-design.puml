@@ -1,0 +1,29 @@
+@startuml
+     interface Component{
+        + operation():void
+     }
+
+     class ComponentImpl{
+        + operation():void
+     }
+
+     class Decorator{
+         # component:Component
+         + Decorator(Component component):void
+         + operation():void
+     }
+
+     class DecoratorImpl{
+         + DecoratorImpl(Component component):void
+         + addFunction():void
+         + operation():void
+     }
+
+     ComponentImpl ...|> Component
+         Decorator ...|>  Component
+         Component ...o Decorator
+     DecoratorImpl ...|> Decorator
+
+
+
+@enduml

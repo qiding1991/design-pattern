@@ -1,0 +1,31 @@
+@startuml
+
+    class SubSystem1{
+        # method1():void
+    }
+
+    class SubSystem2{
+        # method2():void
+    }
+
+    class SubSystem3{
+        # method3():void
+    }
+
+    class Facade{
+      - system1:SubSystem1
+      - system2:SubSystem2
+      - system3:SubSystem3
+      + method():void
+    }
+
+
+        SubSystem1 --o Facade
+        SubSystem2 --o Facade
+        SubSystem3 --o Facade
+
+    Facade<--Client
+
+
+
+@enduml

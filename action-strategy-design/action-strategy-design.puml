@@ -1,0 +1,28 @@
+@startuml
+     interface Strategy{
+        + strategyMethod():void
+     }
+
+     class AStrategyImpl{
+         + strategyMethod():void
+     }
+
+     class BStrategyImpl{
+         + strategyMethod():void
+     }
+
+
+     class ApplicationContext{
+         - strategy:Strategy
+         + getStrategy():Strategy
+         + setStrategy(Strategy strategy):void
+         + function():void
+     }
+
+
+       Client -->  ApplicationContext
+       ApplicationContext o-- Strategy
+       Strategy <|.. AStrategyImpl
+       Strategy <|.. BStrategyImpl
+
+@enduml

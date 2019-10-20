@@ -1,0 +1,34 @@
+@startuml
+    interface Implementor {
+       + opertionImpl():Object
+    }
+    class AImplemetor{
+       + opertionImpl():object
+    }
+
+    class BImplemetor{
+       + opertionImpl():object
+    }
+
+    abstract class Abstraction{
+        - implementor:Implementor
+        # Abstraction(Implementor imple)
+        + opertion():void
+    }
+
+    class RefinedAbstraction{
+       - implementor:Implementor
+       # RefinedAbstraction(Implementor imple)
+       + opertion():void
+    }
+
+
+           AImplemetor...|>Implementor
+           BImplemetor...|>Implementor
+    RefinedAbstraction---|>Abstraction
+           Implementor---o Abstraction
+           Client...>Implementor
+           Client...>Abstraction
+
+
+@enduml

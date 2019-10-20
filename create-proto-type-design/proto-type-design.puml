@@ -1,0 +1,24 @@
+@startuml
+
+ interface Closeable{
+   + clone():object
+ }
+
+  class  Realizetype {
+     - name:String
+     + getName():String
+     + setName(String name):void
+     + clone():Object
+  }
+
+  class Client{
+      + getRealizetype():Realizetype
+  }
+
+
+  Closeable<|.. Realizetype
+
+  Realizetype <.. Client
+
+
+@enduml

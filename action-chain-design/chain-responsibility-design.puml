@@ -1,0 +1,22 @@
+@startuml
+     abstract class Handler{
+         - next: Handler
+         + setHandler(Handler handler):void
+         + getHandler():Handler
+         + handlerRequest(String request):void
+     }
+
+     class ConcreteHandlerA{
+       + handlerRequest(String request):void
+     }
+
+     class ConcreteHandlerB{
+       + handlerRequest(String request):void
+     }
+
+     Handler o...Handler
+     Client -->Handler
+     Handler<|--ConcreteHandlerA
+     Handler<|--ConcreteHandlerB
+
+@enduml

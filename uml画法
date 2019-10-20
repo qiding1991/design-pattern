@@ -2,3 +2,12 @@
     (1) 类名（Name）是一个字符串，例如，Student。
     (2) 属性 [可见性]属性名:类型[=默认值] +、-、#、~
     (3) 操作 [可见性]名称(参数列表)[:返回类型]
+
+
+* @startuml
+* Class01 <|-- Class02:泛化
+* Class03 <-- Class04:关联
+* Class05 *-- Class06:组合
+* Class07 o-- Class08:聚合
+* Class09 -- Class10
+* @enduml

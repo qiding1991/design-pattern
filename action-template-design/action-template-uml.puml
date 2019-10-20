@@ -1,0 +1,24 @@
+@startuml
+    abstract class AbstractClass{
+       + operation():void
+       + abstract operation1():void
+       + abstract operation2():void
+    }
+
+    class SubClass{
+     + operation1():void
+     + operation2():void
+    }
+
+    class Client{
+       + template:AbstractClass
+       + main():void
+    }
+
+     Client <-- AbstractClass
+     AbstractClass <|... SubClass
+
+
+
+
+@enduml

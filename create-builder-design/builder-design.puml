@@ -1,0 +1,47 @@
+@startuml
+
+   class Product{
+     # param1:String
+     # param2:String
+     # param3:String
+   }
+
+   abstract class  Builder{
+      - product:Product
+      + setParam1(String param1):void
+      + setParam2(String param2):void
+      + setParam3(String param3):void
+      + build():Product
+   }
+
+   class ConcreteBuilder{
+      + setParam1(String param1):void
+      + setParam2(String param2):void
+      + setParam3(String param3):void
+   }
+
+
+   class Director{
+      - builder: Builder
+      + setBuilder():void
+      + construct():Product
+   }
+
+
+
+
+
+
+   ConcreteBuilder --|> Builder
+
+   Product --o Builder
+   Builder --o Director
+
+
+
+
+
+
+
+
+@enduml

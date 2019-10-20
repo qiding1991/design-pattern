@@ -1,0 +1,24 @@
+@startuml
+    interface Target{
+      + request():void
+    }
+
+    class Adaptee{
+      + specifiRequest():void
+    }
+
+    class Adapter{
+      + request():void
+    }
+
+    Adapter---|>Adaptee
+    Adapter...|>Target
+
+    Client...>Target
+
+
+
+
+
+
+@enduml

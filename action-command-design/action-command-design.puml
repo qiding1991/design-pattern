@@ -1,0 +1,40 @@
+@startuml
+
+    class ReceiverA{
+        + methodA():void
+    }
+
+    class ReceiverB{
+        + methodB():void
+    }
+
+    interface Command{
+       + execute():void
+    }
+
+    class CommandA{
+       - receiverA: ReceiverA
+       + CommandA(ReceiverA receiverA):void
+       + execute():void
+    }
+
+    class CommandB{
+       - receiverB: ReceiverB
+       + CommandB(ReceiverB receiverb):void
+       + execute():void
+    }
+
+    class Invoker{
+       - command : Command
+       + Invoker(Command command):void
+       + call():void
+    }
+
+    Invoker o-- Command
+    Command <|.. CommandA
+    Command <|.. CommandB
+    CommandA o.. ReceiverA
+    CommandB o.. ReceiverB
+
+
+@enduml
