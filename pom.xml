@@ -24,6 +24,8 @@
         <module>action-command-design</module>
         <module>action-chain-design</module>
         <module>action-state-design</module>
+        <module>struct-flyweight-design</module>
+        <module>struct-composites-design</module>
     </modules>
 
 

@@ -1,0 +1,48 @@
+@startuml
+
+  class FlyweightFactory{
+     - flyweights: Hash<String,Flyweight>
+     + getFlyweight: Flyweight
+  }
+
+  interface Flyweight{
+     + operation(UnShareableFlyweight unshare):void
+  }
+
+  class UnShareableFlyweight{
+      - info:String
+      + setInfo(String info):void
+      - getInfo():String
+  }
+
+
+
+  class ConcreteFlyweight1{
+     - key:String
+     + ConcreteFlyweight(String flyweightKey):void
+     + operation(UnShareableFlyweight unshare):void
+  }
+
+  class ConcreteFlyweight2{
+       - key:String
+       + ConcreteFlyweight(String flyweightKey):void
+       + operation(UnShareableFlyweight unshare):void
+    }
+
+  FlyweightFactory o--Flyweight
+  Flyweight.>UnShareableFlyweight
+  Flyweight<|..ConcreteFlyweight1
+  Flyweight<|..ConcreteFlyweight2
+  FlyweightFactory <. Client
+  Client..>Flyweight
+
+
+
+
+
+
+
+
+
+
+@enduml

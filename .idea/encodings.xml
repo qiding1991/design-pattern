@@ -13,8 +13,10 @@
     <file url="file://$PROJECT_DIR$/create-singleton-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-adapter-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-bridge-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/struct-composites-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-decorator-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-facade-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/struct-flyweight-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-proxy-design" charset="UTF-8" />
   </component>
 </project>

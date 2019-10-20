@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.qiding.design</groupId>
-  <artifactId>struct-decorator-design</artifactId>
+  <artifactId>struct-flyweight-design</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>struct-decorator-design</name>
+  <name>struct-flyweight-design</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
