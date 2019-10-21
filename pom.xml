@@ -27,6 +27,10 @@
         <module>struct-flyweight-design</module>
         <module>struct-composites-design</module>
         <module>action-observer-design</module>
+        <module>action-mediator-design</module>
+        <module>action-iterator-design</module>
+        <module>action-visitor-design</module>
+        <module>action-memento-design</module>
     </modules>
 
 

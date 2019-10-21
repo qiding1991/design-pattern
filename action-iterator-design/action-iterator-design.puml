@@ -1,0 +1,37 @@
+@startuml
+
+    interface Iterator{
+         + hasNext():boolean
+         + next(): Object
+         + first(): Object
+     }
+
+     class ConcreteIterator{
+         -list:List<Object>
+         + hasNext():boolean
+         + next(): Object
+         + first(): Object
+     }
+
+     interface Aggregate{
+           + add(Object string):void
+           + remove(Object string):void
+           + getIterator():Iterator
+     }
+
+     class ConcreteAggregate{
+           -list:List<Object>
+           + add(Object string):void
+           + remove(Object string):void
+           + getIterator():Iterator
+     }
+
+         Aggregate <|.. ConcreteAggregate
+         Iterator <|.. ConcreteIterator
+    ConcreteIterator <- ConcreteAggregate
+
+
+
+
+
+@enduml

@@ -10,6 +10,11 @@
         <module name="action-chain-design" />
         <module name="struct-composites-design" />
         <module name="create-factory-method-design" />
+        <module name="action-iterator-design" />
+        <module name="struct-composites-design" />
+        <module name="create-factory-method-design" />
+        <module name="action-mediator-design" />
+        <module name="action-memento-design" />
         <module name="action-strategy-design" />
         <module name="create-singleton-design" />
         <module name="action-state-design" />
@@ -18,12 +23,19 @@
         <module name="struct-proxy-design" />
         <module name="action-observer-design" />
         <module name="create-proto-type-design" />
+        <module name="action-visitor-design" />
         <module name="struct-facade-design" />
         <module name="struct-bridge-design" />
         <module name="struct-flyweight-design" />
         <module name="struct-decorator-design" />
         <module name="action-template-design" />
         <module name="create-builder-design" />
+      </profile>
+      <profile name="Annotation profile for design-pattern" enabled="true">
+        <sourceOutputDir name="../create-proto-typede-design/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../create-proto-typede-design/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="create-proto-type-design" />
       </profile>
     </annotationProcessing>
   </component>
