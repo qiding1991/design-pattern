@@ -1,3 +1,27 @@
 @startuml
 
+
+     abstract class  Sate{
+        + handler(Context context):void
+     }
+
+     class  SateA{
+         + handler(Context context):void
+     }
+
+     class  SateB{
+         + handler(Context context):void
+     }
+
+     class Context{
+        - state:Sate
+        + setState(Sate state):void
+        + getState(Sate state):Sate
+        + handler():void
+     }
+
+      Sate -o Context
+      Sate <|..SateA
+      Sate <|..SateB
+
 @enduml

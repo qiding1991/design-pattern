@@ -12,14 +12,10 @@
        + getResult(): String
     }
 
-    FunctionImpl...|>IFunction
-    FunctionProxy...|>IFunction
-    FunctionImpl ---* FunctionProxy
-    client...>IFunction
-    client...>FunctionImpl
-
-
-
-
+    Client.>IFunction
+    IFunction<|..FunctionImpl
+    IFunction<|..FunctionProxy
+    FunctionProxy o-FunctionImpl
+    Client ..>FunctionProxy
 
 @enduml

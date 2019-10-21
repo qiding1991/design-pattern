@@ -1,8 +1,9 @@
 package com.qiding.design;
 
-public class StateA  implements State{
+public class StateB implements State{
     @Override
     public void handle(Context context) {
-        System.out.println();
+        System.out.println("B处理请求");
+        context.setState(new StateA());
     }
 }

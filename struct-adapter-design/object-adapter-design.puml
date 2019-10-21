@@ -12,9 +12,8 @@
           + request():void
         }
 
-        Adapter ...|> Target
-        Adaptee ---o  Adapter
-        Client ...> Target
-
+         Client .> Target
+         Target<|..Adapter
+         Adapter -o Adaptee
 
 @enduml

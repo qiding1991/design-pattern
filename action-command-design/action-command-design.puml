@@ -33,8 +33,8 @@
     Invoker o-- Command
     Command <|.. CommandA
     Command <|.. CommandB
-    CommandA o.. ReceiverA
-    CommandB o.. ReceiverB
+    CommandA o-- ReceiverA
+    CommandB o-- ReceiverB
 
 
 @enduml

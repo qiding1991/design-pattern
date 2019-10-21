@@ -15,8 +15,8 @@
        + main():void
     }
 
-     Client <-- AbstractClass
-     AbstractClass <|... SubClass
+     Client -> AbstractClass
+     AbstractClass <|.. SubClass
 
 
 

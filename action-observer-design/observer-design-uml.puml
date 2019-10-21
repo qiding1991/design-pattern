@@ -1,26 +1,34 @@
 @startuml
 
-abstract class AbstractList
-abstract AbstractCollection
-interface List
-interface Collection
+     interface Observer{
+          + observe():void
+     }
 
-List <|-- AbstractList
-Collection <|-- AbstractCollection
+     class ConcreteObserver1{
+       - name:String
+       + observe():void
+     }
 
-Collection <|- List
-AbstractCollection <|- AbstractList
-AbstractList <|-- ArrayList
+     class ConcreteObserver2{
+            - name:String
+            + observe():void
+     }
 
-class ArrayList {
-Object[] elementData
-size()
-}
 
-enum TimeUnit {
-DAYS
-HOURS
-MINUTES
-}
+     abstract  class  Subject{
+         # observers:List<Observer>
+         + addObserver(Observer observer):void
+         + removeObserver(Observer observer):void
+         + notifyObserver():void
+     }
+
+     class ConcreteSubject{
+         + notifyObserver():void
+     }
+
+    Subject o- Observer
+    Subject <|-- ConcreteSubject
+    Observer<|-- ConcreteObserver1
+    Observer<|-- ConcreteObserver2
 
 @enduml

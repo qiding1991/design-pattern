@@ -19,10 +19,11 @@
          + operation():void
      }
 
-     ComponentImpl ...|> Component
-         Decorator ...|>  Component
-         Component ...o Decorator
-     DecoratorImpl ...|> Decorator
+    Component<|.. Decorator
+    Component<|. ComponentImpl
+    Decorator<|-- DecoratorImpl
+    Component --o Decorator
+
 
 
 

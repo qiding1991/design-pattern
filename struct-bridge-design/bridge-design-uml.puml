@@ -23,12 +23,11 @@
     }
 
 
-           AImplemetor...|>Implementor
-           BImplemetor...|>Implementor
-    RefinedAbstraction---|>Abstraction
-           Implementor---o Abstraction
-           Client...>Implementor
-           Client...>Abstraction
+       Client.>Abstraction
+       Abstraction o- Implementor
+       Abstraction <|-- RefinedAbstraction
+       Implementor<|..AImplemetor
+       Implementor<|..BImplemetor
 
 
 @enduml

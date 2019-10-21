@@ -9,6 +9,6 @@ public class CommandB implements Command {
 
     @Override
     public void execute() {
-
+        receiverB.methodB();
     }
 }

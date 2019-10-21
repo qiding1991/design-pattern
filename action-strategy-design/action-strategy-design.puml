@@ -21,7 +21,7 @@
 
 
        Client -->  ApplicationContext
-       ApplicationContext o-- Strategy
+       ApplicationContext o- Strategy
        Strategy <|.. AStrategyImpl
        Strategy <|.. BStrategyImpl
 
