@@ -1,0 +1,38 @@
+@startuml
+   abstract class Colleague{
+        # mediator:Mediator
+        + setMediator(Mediator mediator):void
+        + receive():void
+        + send():void
+   }
+
+    class Colleague1{
+        + receive():void
+        + send():void
+    }
+
+    class Colleague2{
+        + receive():void
+        + send():void
+    }
+
+
+   abstract class Mediator{
+      + register(Colleague colleague);
+      + replay(Colleague colleague);
+   }
+
+    class ConcreteMediator{
+       - colleagues:List<Colleague>
+       + register(Colleague colleague);
+       + replay(Colleague colleague);
+    }
+
+
+    Mediator -o Colleague
+    Mediator <|.. ConcreteMediator
+    Colleague --o ConcreteMediator
+    Colleague<|..Colleague1
+    Colleague<|..Colleague2
+
+@enduml

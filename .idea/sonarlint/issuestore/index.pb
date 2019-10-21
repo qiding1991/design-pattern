@@ -188,7 +188,8 @@ Caction-command-design/src/main/java/com/qiding/design/CommandB.java,2/f/2f5cad
 r
 Baction-command-design/src/main/java/com/qiding/design/Invoker.java,9/b/9b69f49ff3d4d4efb5dee8d2c1707c0de46757c6
 =
-3行为模式,0/6/062ea61e4e2e45b4bb578adce861f6112793e2db
+
+3行为模式,0/6/062ea61e4e2e45b4bb578adce861f6112793e2db
 n
 >action-command-design/src/main/java/com/qiding/design/App.java,1/5/159b24848b0c228d712f0528275e384290b79817
 K

@@ -8,17 +8,22 @@
         <outputRelativeToContentRoot value="true" />
         <module name="create-abstract-factory-design" />
         <module name="action-chain-design" />
-        <module name="struct-facade-design" />
+        <module name="action-iterator-design" />
+        <module name="struct-composites-design" />
         <module name="create-factory-method-design" />
-        <module name="action-state-design" />
+        <module name="action-mediator-design" />
         <module name="action-strategy-design" />
         <module name="create-singleton-design" />
-        <module name="action-template-design" />
+        <module name="action-state-design" />
         <module name="action-command-design" />
         <module name="struct-adapter-design" />
         <module name="struct-proxy-design" />
+        <module name="action-visitor-design" />
+        <module name="struct-facade-design" />
         <module name="struct-bridge-design" />
+        <module name="struct-flyweight-design" />
         <module name="struct-decorator-design" />
+        <module name="action-template-design" />
         <module name="create-builder-design" />
       </profile>
       <profile name="Annotation profile for design-pattern" enabled="true">
@@ -28,8 +33,5 @@
         <module name="create-proto-type-design" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="create-proto-typede-design" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

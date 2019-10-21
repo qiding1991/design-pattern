@@ -3,9 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/action-chain-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/action-command-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/action-iterator-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/action-mediator-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/action-state-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/action-strategy-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/action-template-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/action-visitor-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/create-abstract-factory-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/create-builder-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/create-factory-method-design" charset="UTF-8" />
@@ -13,8 +16,10 @@
     <file url="file://$PROJECT_DIR$/create-singleton-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-adapter-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-bridge-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/struct-composites-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-decorator-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-facade-design" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/struct-flyweight-design" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/struct-proxy-design" charset="UTF-8" />
   </component>
 </project>

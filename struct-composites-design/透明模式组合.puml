@@ -1,0 +1,34 @@
+
+@startuml
+'     叶子结点和树枝节点功能一致
+
+    interface Component{
+       + add(Component leaf):void
+       + remove(Component leaf):void
+       + getChild(int i):Component
+       + operation():void
+    }
+
+    class Leaf{
+       - name:String
+       + add(Component leaf):void
+       + remove(Component leaf):void
+       + getChild(int i):Component
+       + operation():void
+    }
+
+    class Composite{
+       - composites:List<Component>
+       + add(Component leaf):void
+       + remove(Component leaf):void
+       + getChild(int i):Component
+       + operation():void
+    }
+
+
+    Component<|.. Leaf
+    Component<|.. Composite
+    Component ..o Composite
+    Leaf <..Client
+    Composite <..Client
+@enduml
