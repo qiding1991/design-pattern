@@ -213,3 +213,6 @@ P
  action-state-design/状态模式,1/b/1bfc8be1de4b668f875fadf531e84817285809f7
 Y
 )action-state-design/state-uml-design.puml,5/2/52119a089f1fbaf7bb7024ccd21fd9125288fe35
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
