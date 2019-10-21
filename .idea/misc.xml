@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/action-iterator-design/pom.xml" />
         <option value="$PROJECT_DIR$/action-visitor-design/pom.xml" />
         <option value="$PROJECT_DIR$/action-memento-design/pom.xml" />
+        <option value="$PROJECT_DIR$/action-interpreter-design/pom.xml" />
       </list>
     </option>
   </component>

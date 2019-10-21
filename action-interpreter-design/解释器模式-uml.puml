@@ -1,0 +1,29 @@
+@startuml
+    abstract class AbstractExpression{
+        + interpreter(String info):Object
+    }
+
+    class TerminalExpression{
+        + interpreter(String info):Object
+    }
+
+    class NonTerminalExpression{
+        - expr1: AbstractExpression
+        - expr2: AbstractExpression
+        + interpreter(String info):Object
+    }
+
+    class Context{
+        - expr1: AbstractExpression
+        + Context():void
+        + operation(String info):void
+    }
+
+
+   Context o- AbstractExpression
+   AbstractExpression <|.. TerminalExpression
+   AbstractExpression <|.. NonTerminalExpression
+   AbstractExpression ..o NonTerminalExpression
+
+
+@enduml

@@ -31,6 +31,7 @@
         <module>action-iterator-design</module>
         <module>action-visitor-design</module>
         <module>action-memento-design</module>
+        <module>action-interpreter-design</module>
     </modules>
 
 
