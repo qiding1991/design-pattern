@@ -12,6 +12,7 @@
         <module name="struct-composites-design" />
         <module name="create-factory-method-design" />
         <module name="action-mediator-design" />
+        <module name="action-memento-design" />
         <module name="action-strategy-design" />
         <module name="create-singleton-design" />
         <module name="action-state-design" />

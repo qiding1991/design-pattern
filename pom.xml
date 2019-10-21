@@ -29,6 +29,7 @@
         <module>action-mediator-design</module>
         <module>action-iterator-design</module>
         <module>action-visitor-design</module>
+        <module>action-memento-design</module>
     </modules>
 
 
