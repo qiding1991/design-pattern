@@ -12,11 +12,11 @@
         <module name="action-iterator-design" />
         <module name="struct-composites-design" />
         <module name="create-factory-method-design" />
-        <module name="action-template-design" />
+        <module name="action-state-design" />
         <module name="action-visitor-design" />
         <module name="action-strategy-design" />
         <module name="create-singleton-design" />
-        <module name="action-state-design" />
+        <module name="action-template-design" />
         <module name="action-command-design" />
         <module name="struct-proxy-design" />
         <module name="struct-adapter-design" />
